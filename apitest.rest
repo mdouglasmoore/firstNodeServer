@@ -1,0 +1,43 @@
+@server=http://localhost:1023
+# @server=http://cloud.something.com
+
+
+### Hello API
+GET {{server}}/hello?name=James&city=Toronto&age=34
+
+
+
+### Jokes API
+GET {{server}}/jokes
+
+
+
+
+
+### Sven Jokes API
+GET https://v2.jokeapi.dev/joke/Any?amount=2
+
+
+### first POST API
+POST {{server}}/login
+Content-Type: application/json
+
+{
+    "data": {
+        "username": "mnm@m.com",
+        "password": "abc123"
+    }
+};
+
+###
+GET {{server}}/login?username=blahblah&password=bobloblaw
+
+###
+GET {{server}}/students
+
+###
+GET {{server}}/students/inPerson
+
+###
+
+GET {{server}}/students/6
